@@ -6,20 +6,21 @@
 body{
     font-family: Roboto, RobotoDraft, Arial, sans-serif;
 }
-nav li {
+nav ul {
     display: flex;
     justify-content: flex-end;
+    list-style: none;
 }
-nav li ul{
+nav ul li{
     margin: 0.6rem;
     padding: 0.3rem;
 }
-nav li ul img{
+nav ul li img{
     height: 20px;
     margin: 0px;
     padding: 0px;
 }
-nav li ul a{
+nav ul li a{
     text-decoration: none;
     color: black;
 }
@@ -34,7 +35,7 @@ a:hover{
     margin: auto 1rem;
     padding: 1rem;
     text-align: center;
-    height: 76vh;
+    height: 76.5vh;
     
 }
 #main-content #offered{
@@ -95,6 +96,21 @@ footer p {
 
 .content{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
+}
+
+@media(max-width: 500px){
+    #main-content #offered{
+        display: none;
+    }
+    #main-content div button{
+        display: none;
+    }
+    #container footer{
+        display: none;
+    }
+    #main-content input{
+        width: 80%;
+    }
+
 }
